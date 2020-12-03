@@ -10,9 +10,9 @@ const Html = (props) => {
     return (
     <> 
       <div className="container my-0">
-    <h1>{props.heading}</h1>
-         <h2>Definition and Usage</h2>
-           {props.use}
+    <h1 className="tag-heading">{props.heading}</h1>
+         <h2><b>Definition and Usage :</b></h2>
+           <p className="tag-usage">{props.use}</p>
         <div className="html-code-div">
           <CopyToClipboard className="copyButton" 
               onCopy={() => setIsCopied(true)}
@@ -28,7 +28,7 @@ const Html = (props) => {
       </div>
     </div>
     <div className="container mt-3">
-    <h1>Output:</h1>
+    <h1 style={{color:"white"}}>Output:</h1>
     <iframe className={props.classname} title="feildset" src={props.display} width="100%" height="200px"></iframe>
    </div><br/><br/>
  </>

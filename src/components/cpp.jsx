@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import {FaRegCopy, FaRegClipboard} from "react-icons/fa";
+import {FaRegCopy} from "react-icons/fa";
 import dark  from 'react-syntax-highlighter/src/styles/hljs/a11y-dark';
 
 
@@ -17,8 +17,9 @@ const Codehighlight = () => {
   
     const [isCopied, setIsCopied] = useState(false);
     return (
-      <div className="container mt-4">
-       <h1>Hello World using C++</h1>
+      <div className="cpp-container container">
+        <h1 className="Sub-title">C++ Programming</h1>
+       <h1 className="py-2"><b>Hello World using C++</b></h1>
         <div className="code-div">
           <CopyToClipboard className="copyButton" 
               onCopy={() => setIsCopied(true)}

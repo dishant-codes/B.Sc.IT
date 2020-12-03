@@ -4,9 +4,7 @@ const Error = () => {
 
 
     return (
-        <>
-          <h1 className="container">OOps! Page not found.</h1>
-        </>
+          <h1 className="container" style={{color:"white"}}>#404 Page not found.</h1>
     );
 };
 

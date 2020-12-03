@@ -3,7 +3,7 @@ const HtmlData = [
     {
        id: 1,
        codeString: `<!DOCTYPE html>
-       <head>
+       <html> <head>
        <title>Document</title>
        </head>
        <body>
@@ -28,31 +28,30 @@ const HtmlData = [
        
        The <code>&lt;fieldset&gt;</code> tag draws a box around the related elements.
      </p>,
-     output: `B.Sc.IT/outputfiles/fieldset.html`,
+     output: `outputfiles/fieldset.html`,
     },
     {
       id: 2,
         codeString: `<!DOCTYPE html>
-<html>
-    <head>
-        <title>Document</title>
-    </head>
-    <body>
-        <section>
-            <h1>B.Sc. I.T.</h1>
-            <p>This is SY Class. All students are attending this class. students will learn how to design and devolep web pages.</p>
-        </section>
-    </body>
-</html>`,
+        <html> <head>
+            <title>Document</title>
+        </head>
+        <body>
+            <section>
+                <h1>B.Sc. I.T.</h1>
+                <p>This is SY Class. All students are attending this class. students will learn how to design and devolep web pages.</p>
+            </section>
+        </body>
+        </html>`,
         title: `2.Section Tag`,
         className:`output-box`,
         usage: <p>The <code>&lt;section&gt;</code> tag defines a section in a document.</p>,
-        output: `B.Sc.IT/outputfiles/Section.html`,
+        output: `outputfiles/Section.html`,
      },
      {
       id: 3,
         codeString: `<!DOCTYPE html>
-        <head>
+        <html> <head>
             <title>Document</title>
         </head>
         <body>
@@ -73,17 +72,17 @@ const HtmlData = [
         Any sort of content can be put inside the <code>&lt;details&gt;</code> tag. 
         
         Tip: The <code>&lt;summary&gt;</code> tag is used in conjuction with <code>&lt;details&gt;</code> to specify a visible heading for the details.</p>,
-        output: `B.Sc.IT/outputfiles/details.html`,
+        output: `outputfiles/details.html`,
      },
      {
       id: 4,
       codeString: `<!DOCTYPE html>
       <html>
-        <head>
+        <html> <head>
           <title>Document</title>
         </head>
         <body>
-          <video height="600px" width="90%" controls>
+          <video height="100%" width="100%" controls>
             <source src="outputfiles/movie.mp4" type="video/mp4" />
           </video>
         </body>
@@ -96,13 +95,13 @@ const HtmlData = [
       <code>&lt;source&gt;</code> tags 
       with different video sources. The browser will choose the first source it 
       supports.</p>,
-      output: `B.Sc.IT/outputfiles/video.html`,
+      output: `outputfiles/video.html`,
    },
    {
     id: 5,
     codeString: `<!DOCTYPE html>
     <html>
-        <head>
+        <html> <head>
             <title>Document</title>
         </head>
         <body>
@@ -130,12 +129,12 @@ const HtmlData = [
     
     Tip: By default, a table caption will be center-aligned above a table. However,<br/>
      the CSS properties text-align and caption-side can be used to align and place the caption.</p>,
-    output: `B.Sc.IT/outputfiles/caption.html`,
+    output: `outputfiles/caption.html`,
  },
  {
   id: 6,
   codeString: `<!DOCTYPE html>
-  <head>
+  <html> <head>
       <title>Document</title>
   </head>
   <body>
@@ -159,12 +158,12 @@ const HtmlData = [
 </p><br/>
 <p>  Note: <code>&lt;article&gt;</code> element does not render as anything special in a browser. However, you can use CSS to style the <code>&lt;article&gt;</code> element (see example below).
   </p></>,
-  output: `B.Sc.IT/outputfiles/article.html`,
+  output: `outputfiles/article.html`,
 },
   {
     id: 7,
     codeString: `<!DOCTYPE html>
-    <head>
+    <html> <head>
         <title>Document</title>
     </head>
     <body>
@@ -180,12 +179,12 @@ const HtmlData = [
 
       The <code>&lt;figcaption&gt;</code> element can be placed as the first or last child of the &lt;figure&gt; element.        
   </p></>,
-    output: `B.Sc.IT/outputfiles/figcaption.html`,
+    output: `outputfiles/figcaption.html`,
   },
   {
     id: 8,
     codeString: `<!DOCTYPE html>
-    <head>
+    <html> <head>
         <title>Document</title>
         <base href="https://www.google.com" target="_black">
     </head>
@@ -205,12 +204,12 @@ const HtmlData = [
     There can only be one single <code>&lt;base&gt;</code> element in a document, and it must be inside the <code>&lt;head&gt;</code> element.
     </p>
     </>,
-    output: `B.Sc.IT/outputfiles/base.html`,
+    output: `outputfiles/base.html`,
   },
   {
     id: 9,
     codeString: `<!DOCTYPE html>
-    <head>
+    <html> <head>
         <title>Document</title>
     </head>
     <body>
@@ -230,13 +229,13 @@ const HtmlData = [
     
     Tip: Always add the <code>&lt;label&gt;</code> tag for best accessibility practices!</p>
     </>,
-    output: `B.Sc.IT/outputfiles/ml.html`,
+    output: `outputfiles/ml.html`,
   },
   {
     id: 10,
     codeString: `<!DOCTYPE html>
     <html>
-      <head>
+      <html> <head>
         <title>Document</title>
       </head>
       <body>
@@ -269,13 +268,13 @@ const HtmlData = [
     
     Tip: If you have a long list of options, you can group related options within the <code>&lt;optgroup&gt;</code> tag. </p>
     </>,
-    output: `B.Sc.IT/outputfiles/dropdown.html`,
+    output: `outputfiles/dropdown.html`,
   },
   {
     id: 11,
     codeString: `<!DOCTYPE html>
     <html>
-      <head>
+      <html> <head>
         <title>Document</title>
       </head>
       <body>
@@ -293,13 +292,13 @@ const HtmlData = [
     
     Tip: The <code>&lt;figcaption&gt;</code> element is used to add a caption for the <code>&lt;figure&gt;</code> element.</p>
     </>,
-    output: `B.Sc.IT/outputfiles/figure.html`,
+    output: `outputfiles/figure.html`,
   },
   {
     id: 12,
     codeString: `<!DOCTYPE html>
     <html>
-      <head>
+      <html> <head>
         <title>Document</title>
       </head>
       <body>
@@ -313,13 +312,13 @@ const HtmlData = [
 
     Tip: Always add the <code>&lt;label&gt;</code> tag for best accessibility practices</p>
     </>,
-    output: `B.Sc.IT/outputfiles/progress.html`,
+    output: `outputfiles/progress.html`,
   },
   {
     id: 13,
     codeString: `<!DOCTYPE html>
     <html>
-      <head>
+      <html> <head>
         <title>Document</title>
       </head>
       <body>
@@ -336,13 +335,13 @@ const HtmlData = [
       The <code>&lt;dialog&gt;</code> element makes it easy to create popup dialogs and modals on a web page.
   </p>
     </>,
-    output: `B.Sc.IT/outputfiles/dialog.html`,
+    output: `outputfiles/dialog.html`,
   },
   {
     id: 14,
     codeString: `<!DOCTYPE html>
     <html>
-      <head>
+      <html> <head>
         <title>Document</title>
       </head>
       <body>
@@ -360,13 +359,13 @@ const HtmlData = [
     <code>&lt;output&gt;</code> tag is used to represent the result of a calculation (like one performed by a script).
     </p>
     </>,
-    output: `B.Sc.IT/outputfiles/output.html`,
+    output: `outputfiles/output.html`,
   },
   {
     id: 15,
     codeString: `<!DOCTYPE html>
     <html>
-      <head>
+      <html> <head>
         <title>Document</title>
       </head>
       <body>
@@ -380,13 +379,13 @@ const HtmlData = [
     className:`output-box`,
     usage: <><p>The <code>&lt;del&gt;</code> tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p>
     </>,
-    output: `B.Sc.IT/outputfiles/del.html`,
+    output: `outputfiles/del.html`,
   },
   {
     id: 16,
     codeString: `<!DOCTYPE html>
     <html>
-      <head>
+      <html> <head>
         <title>Document</title>
       </head>
       <body>
@@ -417,13 +416,13 @@ const HtmlData = [
     
     Tip: To define different properties to a column within a <code>&lt;colgroup&gt;</code>, use the <code>&lt;col&gt;</code> tag within the <code>&lt;colgroup&gt;</code> tag.</p>
     </>,
-    output: `B.Sc.IT/outputfiles/color.html`,
+    output: `outputfiles/color.html`,
   },
   {
     id: 17,
     codeString: `<!DOCTYPE html>
     <html>
-      <head>
+      <html> <head>
         <title>Document</title>
       </head>
       <body>
@@ -436,7 +435,7 @@ const HtmlData = [
     className:`output-box`,
     usage: <><p>The HTML <code>&lt;audio&gt;</code> tag is used to add any audio file to a webpage. HTML helps you to add multimedia files on your website by providing various multimedia tags/elements like <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;embed&gt;</code> and <code>&lt;object&gt;</code>.</p>
     </>,
-    output: `B.Sc.IT/outputfiles/audio.html`,
+    output: `outputfiles/audio.html`,
   },
 ];
 export default HtmlData;

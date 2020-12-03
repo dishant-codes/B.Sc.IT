@@ -1,29 +1,60 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 body {
-  background: url(./components/bg.jpg)no-repeat center center fixed;
   min-height: 100vh;
+  background: url(./components/bg2.jpg)no-repeat center center fixed;
   background-size: cover;
-}
-.App {
-  
-  background-color: #e8e9e4;
+  position: relative;
 }
 
+.App {
+  background-color: #e8e9e483;
+  background: url(./components/bg2.jpg)no-repeat center center fixed;
+}
+.root{
+  height: 100vh;
+}
 header {
   position: absolute;
   z-index: 10;
   width: 100%;
 }
+.home-div{
+  margin-top: 8rem;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+}
+a.dropdown-item.active{
+  color: #fff;
+  text-decoration: none;
+  background-color: #1f1f1f;
+}
+.nav-color{
+  color: white;
+}
+
 button {
   border: none;
   outline: 0;
+}
+
+.tag-usage{
+  font-size: 20px;
+}
+.cpp-container{
+  background-color: white;
+  font-weight: 700;
+  height: 65vh;
+  color: #3d4044;
+  border-radius: 5px;
 }
 .html-code-div{
   position: relative;
 }
 .code-div {
-  width: 500px;
-  position: relative;
+  position: relative;  
 }
 .code-box {
   border-radius: 5px;
@@ -43,6 +74,9 @@ button {
  height: 22rem;
  background-color: white;
 }
+.syllabus{
+  color: #fff;
+}
 .copyButton {
   position: absolute;
   right: 9px;
@@ -50,9 +84,40 @@ button {
   background: transparent;
   color: white;
 }
+.contact-us{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2.8em;
+  font-weight: 1000;
+  color: #fff;
+}
+.Sub-title{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2.8em;
+  font-weight: 1000;
+  color: #3d4044;
+}
+.topic-title{
+  font-weight: 1000;
+  font-size: 2.5em;
+  color: #3d4044;
+}
+.contact-box{
+  height: 65vh;
+}
+.card-title{
+  color: #fff;
+}
+
 .main-container{
   padding-bottom: 10px;
-  background-color:  #e7e7e5;
+  background-color: rgb(255, 255, 255)
+}
+/* .footer{
+  position: fixed;
+} */
+.tag-heading{
+   font-size: 3em;
+   font-weight: 800;
 }
 .copyButton:focus {
   outline: 0;
@@ -70,7 +135,7 @@ button {
   cursor: pointer;
   width: 50px;
   height: 50px;
-  background-color: #4d4d4da2;
+  background-color: #d6d6d696;
   text-indent: -9999px;
   display: none;
   -webkit-border-radius: 60px;
@@ -79,8 +144,8 @@ button {
 }
 
 .on-page {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 #scroll span {
@@ -92,37 +157,39 @@ button {
   height: 0;
   width: 0;
   border: 8px solid transparent;
-  border-bottom-color: #ffffff;
+  border-bottom-color: black;
 }
 
 #scroll:hover {
-  background-color: #000000ce;
+  background-color: white;
   opacity: 1;
   filter: "alpha(opacity=100)";
   -ms-filter: "alpha(opacity=100)";
 }
 
-.navbar {
-  padding: 20px 0;
-}
-
 .navbar-brand {
   font-weight: 800;
   font-size: 2em;
-  color: #262626;
+  color: #fff;
 }
 
 .home-title {
   font-size: 2.8em;
   font-weight: 1000;
+  color: #fff;
   text-transform: uppercase;
+}
+.footer {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
 }
 
 .discrip {
-  margin: 1em 0 0;
+  margin: 1em 0;
   padding: 0;
   font-size: 1.2em;
-  color: #262626;
+  color: #fff;
 }
 
 li {
@@ -133,18 +200,63 @@ li {
   font-weight: 800;
 }
 
-.nav-link {
-  font-weight: 800;
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+  border-bottom: 2px solid white;
+  color: white;
+ }
+.navbar-dark .navbar-nav .nav-item .nav-link {
+  color: rgb(167, 167, 167);
+ }
+ .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.navbar-light .navbar-nav .nav-item.active .nav-link {
-  background-color: #272727;
-  color: #fff;
+
+/* sideBar */
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: #fff;
-  padding: 5px 15px;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+}
+.card-title{
+  color: black;
+} 
+.card-text{
+  color: black;
 }
 .navbar-light .navbar-toggler {
   border: none;
@@ -153,84 +265,48 @@ li {
   border-radius: 0;
   outline: none;
 }
-
+/* .container{
+  color: #fff;
+} */
+.navbar-light .navbar-brand {
+  color: rgb(255, 255, 255);
+}
 .dropdown-menu {
-  background: #e8e9e4;
+  background: #e8e9e48e;
   border: none;
   border-radius: 0;
   padding: -12;
 }
 
 .dropdown-item:hover {
-  background: #262626;
-  color: #fff;
-  padding: 5px 15px;
+  background: #ffff;
+  color: #262626;
+  font-weight: bold;
 }
 
 .navbar-collapse {
-  background: #e8e9e4;
+  background: #00000000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 255);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link:hover{
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.418);
 }
 
-.App-link {
-  color: #61dafb;
-}
 header {
   position: absolute;
   z-index: 10;
   width: 100%;
 }
-.navbar {
-  padding: 20px 0;
-}
 .navbar-brand {
-  color: #262626;
+  color: white;
 }
 .container{
-    min-height: 10em;
+    min-height: 5em;
     vertical-align: middle
-}
-.nav-item {
-  font-weight: 800;
-}
-.navbar-light .navbar-nav .nav-item.active .nav-link {
-  background: #262626;
-  color: #fff;
-}
-.navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: #fff;
-  padding: 5px 15px;
-}
-.navbar-light .navbar-toggler {
-  border: none;
-  color: #fff;
-  border: 2px solid #7f7f7f;
-  border-radius: 0;
-  outline: none;
-}
-.dropdown-menu {
-  background: #e8e9e4;
-  border: none;
-  border-radius: 0;
-  padding: -12;
-}
-.dropdown-item:hover {
-  background: #262626;
-  color: #fff;
-  padding: 5px 15px;
-}
-.navbar-collapse {
-  background: #e8e9e4;
 }
 
 .pagination > li > a
@@ -260,4 +336,10 @@ header {
 {
     background-color: #1f1f1f !Important;
     border: solid 1px #0f0f0f;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-us{
+    font-size: 2em;
+  }
 }
