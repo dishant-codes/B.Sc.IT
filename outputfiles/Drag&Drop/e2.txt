@@ -1,0 +1,43 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      #div1 {
+        width: 280px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        background-color: white;
+      }
+    &lt;/style&gt;
+    &lt;script&gt;
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Drag the Google image into the rectangle:&lt;/p&gt;
+
+    &lt;div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"&gt;&lt;/div&gt;
+    &lt;br /&gt;
+    &lt;img
+      id="drag1"
+      src="img_logo.gif"
+      draggable="true"
+      ondragstart="drag(event)"
+      width="280"
+      height="69"
+    /&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
