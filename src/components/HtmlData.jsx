@@ -3,24 +3,25 @@ const HtmlData = [
     {
        id: 1,
        codeString: `<!DOCTYPE html>
-       <html> <head>
-       <title>Document</title>
-       </head>
-       <body>
-       <fieldset>
-         <legend>Regitration Page</legend>
-         <form>
-           <input type="text" name="username" placeholder="Enter Username" /> <br/> <br/>
-           <input
-             type="text"
-             name="userPass"
-             placeholder="Enter Password"
-           /><br /><br />
-           <input type="submit" value="Regiter" />
-         </form>
-       </fieldset>
-       </body>
-       </html>`,
+<html> 
+ <head>
+   <title>Document</title>
+ </head>
+   <body>
+   <fieldset>
+     <legend>Regitration Page</legend>
+     <form>
+       <input type="text" name="username" placeholder="Enter Username" /> <br/> <br/>
+       <input
+         type="text"
+         name="userPass"
+         placeholder="Enter Password"
+       /><br /><br />
+       <input type="submit" value="Regiter" />
+     </form>
+   </fieldset>
+   </body>
+</html>`,
        title: `1.Fieldset Tag`,
        className:`output-box`,
        usage: <p>
