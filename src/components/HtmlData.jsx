@@ -34,16 +34,17 @@ const HtmlData = [
     {
       id: 2,
         codeString: `<!DOCTYPE html>
-        <html> <head>
-            <title>Document</title>
-        </head>
-        <body>
-            <section>
-                <h1>B.Sc. I.T.</h1>
-                <p>This is SY Class. All students are attending this class. students will learn how to design and devolep web pages.</p>
-            </section>
-        </body>
-        </html>`,
+<html>
+    <head>
+      <title>Document</title>
+    </head>
+    <body>
+        <section>
+            <h1>B.Sc. I.T.</h1>
+            <p>This is SY Class. All students are attending this class. students will learn how to design and devolep web pages.</p>
+        </section>
+    </body>
+</html>`,
         title: `2.Section Tag`,
         className:`output-box`,
         usage: <p>The <code>&lt;section&gt;</code> tag defines a section in a document.</p>,
