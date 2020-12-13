@@ -235,30 +235,31 @@ const HtmlData = [
   {
     id: 10,
     codeString: `<!DOCTYPE html>
-    <html>
-      <html> <head>
-        <title>Document</title>
-      </head>
-      <body>
-        <select>
-          <option>Selet Sub-Subject</option>
-          <optgroup label="B.Sc. I.T." />
-          <option>C++</option>
-          <option>Android</option>
-          <option>IT TOOLS</option>
-          <option>PD</option>
-          <option>D.B.M.S</option>
-          <option>SM</option>
-          <optgroup label="BCA Sci." />
-          <option>C++</option>
-          <option>Mobile Repairing</option>
-          <option>Compter Geaphics</option>
-          <option>PD</option>
-          <option>SM</option>
-          <option>D.B.M.S.</option>
-        </select>
-      </body>
-    </html>`,
+ 
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <select>
+      <option>Selet Sub-Subject</option>
+      <optgroup label="B.Sc. I.T." />
+      <option>C++</option>
+      <option>Android</option>
+      <option>IT TOOLS</option>
+      <option>PD</option>
+      <option>D.B.M.S</option>
+      <option>SM</option>
+      <optgroup label="BCA Sci." />
+      <option>C++</option>
+      <option>Mobile Repairing</option>
+      <option>Compter Geaphics</option>
+      <option>PD</option>
+      <option>SM</option>
+      <option>D.B.M.S.</option>
+    </select>
+  </body>
+</html>`,
     title: `10.Dropdown List`,
     className:`output-box d-down`,
     usage: <><p>The <code>&lt;option&gt;</code> tag defines an option in a select list.<br/>
